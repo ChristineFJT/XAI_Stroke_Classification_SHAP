@@ -1,0 +1,19 @@
+Item,Task 2 Random Forest,Task 6 RBF SVM
+Model / Explainer,Random Forest / Tree SHAP,RBF SVM / Kernel SHAP
+Accuracy,0.9403131115459883,0.7690802348336595
+Precision (stroke=1),0.21052631578947367,0.11570247933884298
+Recall (stroke=1),0.08,0.56
+F1 (stroke=1),0.11594202898550725,0.1917808219178082
+Balanced Accuracy,0.532283950617284,0.6699176954732511
+ROC AUC,0.7687448559670782,0.7824074074074074
+Average Precision,0.1295897825642806,0.16662722809756372
+Test Prevalence,0.04892367906066536,0.04892367906066536
+Same Patient Class-1 Probability,0.18,0.7216852617747536
+Top Three Global Features,"age, avg_glucose_level, bmi","age, bmi, avg_glucose_level"
+Global Explanation Sample,1022 held-out test patients,1022 held-out test patients
+Local Explanation Sample,1 patient: index 75,1 patient: index 75
+SHAP Background,Internal tree paths of oversampled training data,"30 original training rows, seed 21"
+Local SHAP Time (s),0.04583809999166988,0.8353007999976398
+Global SHAP Time (s),17.0283488999994,937.035781700004
+Total SHAP Time (s),17.07418699999107,937.8710825000016
+Local Reconstruction Residual,1.6653345369377348e-16,0.0

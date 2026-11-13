@@ -1,0 +1,9 @@
+8.2 Background Stability Check — Observed Results
+
+Random Forest (additional interventional Tree SHAP experiment):
+For Random Forest interventional Tree SHAP, we compared two different 30-record training backgrounds using the same 1022 held-out patients. The three leading global features with the first background were age, avg_glucose_level, hypertension, compared with age, bmi, avg_glucose_level using the second background. The order of these three features changed. The top-five lists shared 4 features. For the selected patient (test index 75), 5 features switched directly between increasing and decreasing the model's prediction: avg_glucose_level, ever_married_Yes, ever_married_No, gender_Male, smoking_status_smokes. The models' predictions were not retrained; this comparison shows how the feature explanations responded to changing the reference data.
+
+RBF SVM (Kernel SHAP):
+For RBF SVM Kernel SHAP, we compared two different 30-record training backgrounds using the same 1022 held-out patients. The three leading global features with the first background were age, bmi, avg_glucose_level, compared with age, bmi, avg_glucose_level using the second background. The order of these three features remained unchanged. The top-five lists shared 4 features. For the selected patient (test index 75), 0 features switched directly between increasing and decreasing the model's prediction: none of the features with non-negligible local contributions. The models' predictions were not retrained; this comparison shows how the feature explanations responded to changing the reference data.
+
+Interpretation note: The main Random Forest Tree SHAP used tree-path statistics. For the Random Forest background experiment, two interventional Tree SHAP runs were compared with each other. All global comparisons covered the same held-out test set.
