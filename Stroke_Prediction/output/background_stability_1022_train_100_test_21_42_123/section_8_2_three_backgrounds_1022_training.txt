@@ -1,0 +1,31 @@
+8.2 Background stability — observed results (1,022-row backgrounds)
+
+Original training pool: 4,088 non-oversampled records.
+Three DISTINCT stratified 1022-record training backgrounds sampled WITHOUT replacement using seeds 21, 42 and 123.
+Same 100 held-out patients for each explanation; local patient index 75.
+Kernel SHAP: nsamples=32; l1_reg=num_features(10).
+Main Task 4 and Task 6 SHAP results cover all 1,022 test patients; the smaller Section 8.2 subset is used only for this stability check.
+
+Random Forest (interventional Tree SHAP):
+Seed 21: top 3 global features: age, avg_glucose_level, bmi; max reconstruction residual: 0.00003914. Runtime: 21.4s.
+Seed 42: top 3 global features: age, avg_glucose_level, bmi; max reconstruction residual: 0.00002936. Runtime: 21.3s.
+Seed 123: top 3 global features: age, avg_glucose_level, bmi; max reconstruction residual: 0.00000979. Runtime: 21.2s.
+Seed 21 versus seed 42: 5/5 top features in common; 0 meaningful local sign reversals (none).
+Seed 21 versus seed 123: 5/5 top features in common; 0 meaningful local sign reversals (none).
+
+RBF SVM (Kernel SHAP):
+Seed 21: top 3 global features: age, bmi, avg_glucose_level; max reconstruction residual: 0.00000000. Runtime: 536.3s.
+Seed 42: top 3 global features: age, bmi, avg_glucose_level; max reconstruction residual: 0.00000000. Runtime: 547.8s.
+Seed 123: top 3 global features: age, bmi, avg_glucose_level; max reconstruction residual: 0.00000000. Runtime: 541.9s.
+Seed 21 versus seed 42: 4/5 top features in common; 0 meaningful local sign reversals (none).
+Seed 21 versus seed 123: 5/5 top features in common; 1 meaningful local sign reversals (smoking_status_Unknown).
+
+Methodological note: Each seed uses 1,022 DIFFERENT training records sampled from the same 4,088-row pool.
+The seed-21 stability background is 1,022 rows, not the original Task 6 30-row reference sample.
+The comparison keeps the trained models and test cases fixed; changes in SHAP contributions
+may reflect the background sample and, for Kernel SHAP, approximation randomness.
+The original Random Forest tree-path explanation uses a different background method
+from the three interventional RF runs here. Compare the 3 interventional runs with each other.
+Do not report the stability subset results as though they covered all 1,022 test patients.
+Kernel SHAP nsamples=32 prioritises speed; compare trends cautiously because approximation noise may affect rankings.
+Check residuals, especially for Random Forest, before interpreting stability findings.

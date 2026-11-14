@@ -1,0 +1,22 @@
+Feature,SHAP: Original Kernel SHAP (30 training; seed 21),Direction: Original Kernel SHAP (30 training; seed 21),SHAP: Alternative Kernel SHAP (30 training; seed 123),Direction: Alternative Kernel SHAP (30 training; seed 123),Direct sign reversal vs original: Alternative Kernel SHAP (30 training; seed 123)
+age,0.3986187005799145,Increases,0.4159763241973559,Increases,False
+avg_glucose_level,0.035169715670458616,Increases,0.07380757330078076,Increases,False
+bmi,0.03588913994972864,Increases,0.0,Near zero,False
+gender_Female,0.02595408698684995,Increases,0.023178617695695902,Increases,False
+gender_Male,0.0039063140069374065,Increases,0.031055364725513086,Increases,False
+gender_Other,0.0,Near zero,0.0,Near zero,False
+ever_married_No,0.0,Near zero,0.011610834454423189,Increases,False
+ever_married_Yes,0.0,Near zero,0.0,Near zero,False
+work_type_Govt_job,0.0,Near zero,0.0,Near zero,False
+work_type_Never_worked,0.0,Near zero,0.0,Near zero,False
+work_type_Private,-0.03737847886077085,Decreases,-0.03548990113107767,Decreases,False
+work_type_Self-employed,-0.06512634153028946,Decreases,-0.05605735058808991,Decreases,False
+work_type_children,0.0,Near zero,0.0,Near zero,False
+Residence_type_Rural,0.05440534734306484,Increases,0.0521653536145433,Increases,False
+Residence_type_Urban,0.0492677820759066,Increases,0.034503938423632086,Increases,False
+smoking_status_Unknown,0.0,Near zero,0.0,Near zero,False
+smoking_status_formerly smoked,0.0,Near zero,0.0,Near zero,False
+smoking_status_never smoked,0.0,Near zero,0.0,Near zero,False
+smoking_status_smokes,0.0,Near zero,0.0,Near zero,False
+hypertension,0.0,Near zero,0.0,Near zero,False
+heart_disease,-0.14816944610156413,Decreases,-0.08295413923524846,Decreases,False

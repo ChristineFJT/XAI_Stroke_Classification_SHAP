@@ -1,0 +1,56 @@
+{
+  "model": "Random Forest interventional Tree SHAP",
+  "test_patients": 1022,
+  "local_patient_index": "75",
+  "background_a": "30 training rows / seed 21",
+  "background_b": "30 training rows / seed 123",
+  "top_three_a": [
+    "age",
+    "avg_glucose_level",
+    "hypertension"
+  ],
+  "top_three_b": [
+    "age",
+    "bmi",
+    "avg_glucose_level"
+  ],
+  "same_top_three_order": false,
+  "same_top_three_set": false,
+  "top_five_a": [
+    "age",
+    "avg_glucose_level",
+    "hypertension",
+    "bmi",
+    "work_type_Self-employed"
+  ],
+  "top_five_b": [
+    "age",
+    "bmi",
+    "avg_glucose_level",
+    "hypertension",
+    "smoking_status_never smoked"
+  ],
+  "top_five_overlap": 4,
+  "local_opposite_sign_features": [
+    "avg_glucose_level",
+    "ever_married_Yes",
+    "ever_married_No",
+    "gender_Male",
+    "smoking_status_smokes"
+  ],
+  "number_local_opposite_signs": 5,
+  "number_local_direction_changes_including_near_zero": 5,
+  "local_direction_changed_features_including_near_zero": [
+    "avg_glucose_level",
+    "ever_married_Yes",
+    "ever_married_No",
+    "gender_Male",
+    "smoking_status_smokes"
+  ],
+  "zero_tolerance": 1e-06,
+  "first_background_runtime_seconds": 19.020133500001975,
+  "second_background_runtime_seconds": 12.042145400002482,
+  "first_background_max_residual": 0.030000001487106354,
+  "second_background_max_residual": 0.030666668612490566,
+  "method_note": "These two interventional Tree SHAP backgrounds are compared with each other; the main Tree SHAP uses internal tree-path statistics."
+}

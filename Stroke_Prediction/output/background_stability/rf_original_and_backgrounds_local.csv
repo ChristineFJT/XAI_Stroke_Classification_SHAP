@@ -1,0 +1,22 @@
+Feature,SHAP: Original Tree SHAP (tree-path; RF seed 21),Direction: Original Tree SHAP (tree-path; RF seed 21),SHAP: Interventional Tree SHAP (30 training; seed 21),Direction: Interventional Tree SHAP (30 training; seed 21),SHAP: Interventional Tree SHAP (30 training; seed 123),Direction: Interventional Tree SHAP (30 training; seed 123),Direct sign reversal vs original: Interventional Tree SHAP (30 training; seed 21),Direct sign reversal vs original: Interventional Tree SHAP (30 training; seed 123)
+age,0.05518121344355362,Increases,0.10681957763827085,Increases,0.12176854386440633,Increases,False,False
+avg_glucose_level,-0.10500891887914975,Decreases,-0.009610185433302831,Decreases,0.006988648653835601,Increases,False,True
+bmi,-0.15251307787938914,Decreases,-0.02017129638118907,Decreases,-0.027924050131180895,Decreases,False,False
+gender_Female,-0.007243624014715662,Decreases,0.0022414021603860117,Increases,0.002080026499561427,Increases,True,True
+gender_Male,-0.009825197578590789,Decreases,0.0016293650958687067,Increases,-0.00091637802073213,Decreases,True,False
+gender_Other,3.7166407138653953e-06,Increases,0.0,Near zero,0.0,Near zero,False,False
+ever_married_No,0.0032084532645012672,Increases,-0.0035961641260049268,Decreases,0.0013197089193151138,Increases,True,False
+ever_married_Yes,0.0027708853664343666,Increases,-0.00459047633667069,Decreases,0.0019173281856637915,Increases,True,False
+work_type_Govt_job,-0.0011977241623996422,Decreases,0.0022482804631484515,Increases,0.00197195772282915,Increases,True,True
+work_type_Never_worked,1.113874392919112e-05,Increases,0.0,Near zero,0.0,Near zero,False,False
+work_type_Private,-0.01680398361293328,Decreases,-0.005388359765856876,Decreases,-0.006486086947097647,Decreases,False,False
+work_type_Self-employed,-0.020333314086901998,Decreases,-0.018415079585611237,Decreases,-0.022070742965721972,Decreases,False,False
+work_type_children,0.0041143555292193126,Increases,0.0005150793726594808,Increases,0.0025829365345998666,Increases,False,False
+Residence_type_Rural,-0.00027313784308609417,Decreases,0.006990343928070312,Increases,0.009951094436625377,Increases,True,True
+Residence_type_Urban,0.0037356492377692042,Increases,0.013965873215905351,Increases,0.013863083375539039,Increases,False,False
+smoking_status_Unknown,-0.012055042854554176,Decreases,-0.006321031903492743,Decreases,-0.0038984127881424987,Decreases,False,False
+smoking_status_formerly smoked,-0.0037286700904802105,Decreases,-0.009037830872027067,Decreases,-0.0034068541838072025,Decreases,False,False
+smoking_status_never smoked,-0.013212199176423377,Decreases,-0.005575264570294772,Decreases,-0.013677116367489361,Decreases,False,False
+smoking_status_smokes,-0.004230018217856339,Decreases,-0.002391798955674555,Decreases,4.3939367151324406e-05,Increases,False,True
+hypertension,-0.035220287626994695,Decreases,-0.028173545207937422,Decreases,-0.011648388725977081,Decreases,False,False
+heart_disease,-0.007039511651346953,Decreases,0.004861111360120655,Increases,0.004874098339602521,Increases,True,True

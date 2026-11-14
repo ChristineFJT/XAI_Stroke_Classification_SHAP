@@ -1,0 +1,22 @@
+Feature,Local SHAP (30 training rows / seed 21),Local SHAP (30 training rows / seed 123),Direction (30 training rows / seed 21),Direction (30 training rows / seed 123),Direction changed,Positive-to-negative / negative-to-positive,Absolute SHAP difference
+avg_glucose_level,-0.009610185433302831,0.006988648653835601,Decreases,Increases,True,True,0.01659883408713843
+hypertension,-0.028173545207937422,-0.011648388725977081,Decreases,Decreases,False,False,0.01652515648196034
+age,0.10681957763827085,0.12176854386440633,Increases,Increases,False,False,0.01494896622613548
+smoking_status_never smoked,-0.005575264570294772,-0.013677116367489361,Decreases,Decreases,False,False,0.008101851797194588
+bmi,-0.02017129638118907,-0.027924050131180895,Decreases,Decreases,False,False,0.007752753749991823
+ever_married_Yes,-0.00459047633667069,0.0019173281856637915,Decreases,Increases,True,True,0.006507804522334482
+smoking_status_formerly smoked,-0.009037830872027067,-0.0034068541838072025,Decreases,Decreases,False,False,0.005630976688219864
+ever_married_No,-0.0035961641260049268,0.0013197089193151138,Decreases,Increases,True,True,0.0049158730453200405
+work_type_Self-employed,-0.018415079585611237,-0.022070742965721972,Decreases,Decreases,False,False,0.0036556633801107345
+Residence_type_Rural,0.006990343928070312,0.009951094436625377,Increases,Increases,False,False,0.002960750508555065
+gender_Male,0.0016293650958687067,-0.00091637802073213,Increases,Decreases,True,True,0.0025457431166008367
+smoking_status_smokes,-0.002391798955674555,4.3939367151324406e-05,Decreases,Increases,True,True,0.002435738322825879
+smoking_status_Unknown,-0.006321031903492743,-0.0038984127881424987,Decreases,Decreases,False,False,0.002422619115350244
+work_type_children,0.0005150793726594808,0.0025829365345998666,Increases,Increases,False,False,0.0020678571619403858
+work_type_Private,-0.005388359765856876,-0.006486086947097647,Decreases,Decreases,False,False,0.0010977271812407713
+work_type_Govt_job,0.0022482804631484515,0.00197195772282915,Increases,Increases,False,False,0.0002763227403193014
+gender_Female,0.0022414021603860117,0.002080026499561427,Increases,Increases,False,False,0.00016137566082458478
+Residence_type_Urban,0.013965873215905351,0.013863083375539039,Increases,Increases,False,False,0.00010278984036631196
+heart_disease,0.004861111360120655,0.004874098339602521,Increases,Increases,False,False,1.2986979481865828e-05
+work_type_Never_worked,0.0,0.0,Near zero,Near zero,False,False,0.0
+gender_Other,0.0,0.0,Near zero,Near zero,False,False,0.0

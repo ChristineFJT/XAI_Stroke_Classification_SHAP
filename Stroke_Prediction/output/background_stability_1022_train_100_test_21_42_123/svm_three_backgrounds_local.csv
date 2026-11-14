@@ -1,0 +1,22 @@
+Feature,SHAP seed 21,Direction seed 21,SHAP seed 42,Direction seed 42,SHAP seed 123,Direction seed 123,Opposite signs vs seed 21 — seed 42,Opposite signs vs seed 21 — seed 123
+age,0.4199837790198264,Increases,0.4461928723958566,Increases,0.4824669413900633,Increases,False,False
+avg_glucose_level,0.047259120929021396,Increases,0.1677725960000292,Increases,0.0,Near zero,False,False
+bmi,0.09590469840518781,Increases,0.039109883537436,Increases,0.08854649529043404,Increases,False,False
+gender_Female,0.0,Near zero,-0.24621179426440143,Decreases,0.06368338856831283,Increases,False,False
+gender_Male,0.0,Near zero,0.0,Near zero,0.0,Near zero,False,False
+gender_Other,0.0,Near zero,0.0,Near zero,0.0,Near zero,False,False
+ever_married_No,0.0,Near zero,0.0,Near zero,-0.10728520668822351,Decreases,False,False
+ever_married_Yes,0.041703655318505915,Increases,0.0,Near zero,0.0,Near zero,False,False
+work_type_Govt_job,0.0,Near zero,0.004486688816976939,Increases,0.0,Near zero,False,False
+work_type_Never_worked,0.0,Near zero,-0.017605039679442956,Decreases,0.0,Near zero,False,False
+work_type_Private,-0.05455041257294791,Decreases,0.0,Near zero,-0.00019912258431890295,Decreases,False,False
+work_type_Self-employed,0.0,Near zero,-0.17440632133532985,Decreases,0.0,Near zero,False,False
+work_type_children,0.0,Near zero,0.0,Near zero,0.0,Near zero,False,False
+Residence_type_Rural,0.030191441883999807,Increases,0.06471546120196679,Increases,0.02427932044133113,Increases,False,False
+Residence_type_Urban,0.051688249817036264,Increases,0.2018755754155388,Increases,0.0,Near zero,False,False
+smoking_status_Unknown,0.013315012700732536,Increases,0.0,Near zero,-0.016425411193971715,Decreases,False,True
+smoking_status_formerly smoked,0.0,Near zero,0.0,Near zero,0.0,Near zero,False,False
+smoking_status_never smoked,0.0,Near zero,0.0,Near zero,0.0,Near zero,False,False
+smoking_status_smokes,0.012596904509125761,Increases,0.0,Near zero,0.0,Near zero,False,False
+hypertension,0.0,Near zero,0.0,Near zero,0.0,Near zero,False,False
+heart_disease,-0.154243870147359,Decreases,0.0,Near zero,-0.03816007608633779,Decreases,False,False

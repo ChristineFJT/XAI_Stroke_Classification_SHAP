@@ -1,0 +1,13 @@
+8.2 Background Stability Check — Observed Results
+
+Original Random Forest Tree SHAP (RF model seed 21; tree-path reference, not a separately sampled background): top 3 = age, avg_glucose_level, bmi.
+Original RBF SVM Kernel SHAP (30 training records; background seed 21): top 3 = age, bmi, avg_glucose_level.
+
+Random Forest (two INTERVENTIONAL Tree SHAP training backgrounds):
+For Random Forest interventional Tree SHAP, the interventional Tree SHAP comparison used two different 30-record training backgrounds (seeds 21 and 123) for the same 1022 held-out patients. The first background's top three features were age, avg_glucose_level, hypertension; the second background's were age, bmi, avg_glucose_level. Their order changed. The top-five lists shared 4 features. For test patient 75, 5 features reversed their non-negligible local SHAP signs: avg_glucose_level, ever_married_Yes, ever_married_No, gender_Male, smoking_status_smokes.
+Maximum additivity residuals were 0.030000 (seed 21) and 0.030667 (seed 123); treat large residuals cautiously.
+
+RBF SVM (original Kernel SHAP versus alternative Kernel SHAP):
+For RBF SVM Kernel SHAP, the Kernel SHAP comparison used two different 30-record training backgrounds (seeds 21 and 123) for the same 1022 held-out patients. The first background's top three features were age, bmi, avg_glucose_level; the second background's were age, bmi, avg_glucose_level. Their order stayed the same. The top-five lists shared 4 features. For test patient 75, 0 features reversed their non-negligible local SHAP signs: none.
+
+Interpretation: All global explanation arrays cover the same held-out test patients, with the same fitted models and probability output. For SVM and the pair of interventional RF explanations, the comparison isolates the chosen background data. The original RF tree-path SHAP is shown alongside for context, but its differences from interventional Tree SHAP cannot be interpreted as background-only effects.

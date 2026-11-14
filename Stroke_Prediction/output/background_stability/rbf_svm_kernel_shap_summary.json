@@ -1,0 +1,51 @@
+{
+  "model": "RBF SVM Kernel SHAP",
+  "test_patients": 1022,
+  "local_patient_index": "75",
+  "background_a": "30 training rows / seed 21",
+  "background_b": "30 training rows / seed 123",
+  "top_three_a": [
+    "age",
+    "bmi",
+    "avg_glucose_level"
+  ],
+  "top_three_b": [
+    "age",
+    "bmi",
+    "avg_glucose_level"
+  ],
+  "same_top_three_order": true,
+  "same_top_three_set": true,
+  "top_five_a": [
+    "age",
+    "bmi",
+    "avg_glucose_level",
+    "smoking_status_never smoked",
+    "hypertension"
+  ],
+  "top_five_b": [
+    "age",
+    "bmi",
+    "avg_glucose_level",
+    "smoking_status_never smoked",
+    "smoking_status_Unknown"
+  ],
+  "top_five_overlap": 4,
+  "local_opposite_sign_features": [],
+  "number_local_opposite_signs": 0,
+  "number_local_direction_changes_including_near_zero": 2,
+  "local_direction_changed_features_including_near_zero": [
+    "bmi",
+    "ever_married_No"
+  ],
+  "zero_tolerance": 1e-06,
+  "original_base_value": 0.36914844165451743,
+  "alternative_base_value": 0.25388864631722524,
+  "original_local_probability": 0.7216852617747536,
+  "alternative_local_reconstructed_probability": 0.7216852617747533,
+  "alternative_local_residual": 2.220446049250313e-16,
+  "alternative_global_max_residual": 3.3306690738754696e-16,
+  "alternative_local_runtime_seconds": 0.9089534000086132,
+  "alternative_global_runtime_seconds": 2151.073674500003,
+  "note": "Same trained SVM, same 1022 patients, and same nsamples and L1 settings; only the training background changes."
+}

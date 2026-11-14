@@ -1,0 +1,22 @@
+Feature,SHAP seed 21,Direction seed 21,SHAP seed 42,Direction seed 42,SHAP seed 123,Direction seed 123,Opposite signs vs seed 21 — seed 42,Opposite signs vs seed 21 — seed 123
+age,0.1273580681171171,Increases,0.1278639026383351,Increases,0.12829179914854794,Increases,False,False
+avg_glucose_level,0.0047579715987561685,Increases,0.0053833877411423765,Increases,0.0035570848557308957,Increases,False,False
+bmi,-0.015394941604808778,Decreases,-0.01574291003837342,Decreases,-0.01589305595027652,Decreases,False,False
+gender_Female,0.0023581408039394605,Increases,0.0022071431179570837,Increases,0.00256154681992244,Increases,False,False
+gender_Male,0.001355318298429539,Increases,0.001363531544249493,Increases,0.0016312894996749021,Increases,False,False
+gender_Other,0.0,Near zero,0.0,Near zero,0.0,Near zero,False,False
+ever_married_No,-0.0008100345929504367,Decreases,-0.000903991697946625,Decreases,-0.0005252581853485432,Decreases,False,False
+ever_married_Yes,-0.00134332948586316,Decreases,-0.0013816675038853393,Decreases,-0.0011041572793645124,Decreases,False,False
+work_type_Govt_job,0.0010065436371821258,Increases,0.0008877551091430653,Increases,0.001011400703593409,Increases,False,False
+work_type_Never_worked,5.063212435891207e-06,Near zero,5.183580197433079e-06,Near zero,1.025067521815066e-06,Near zero,False,False
+work_type_Private,-0.003930048605924054,Decreases,-0.004038211629670651,Decreases,-0.0040562170120299786,Decreases,False,False
+work_type_Self-employed,-0.01687750439614248,Decreases,-0.01797063167439457,Decreases,-0.017656801089444535,Decreases,False,False
+work_type_children,0.0018513842719496236,Increases,0.0017758321367185922,Increases,0.002017942576443915,Increases,False,False
+Residence_type_Rural,0.007632588174032449,Increases,0.007499694021874449,Increases,0.007959885141607096,Increases,False,False
+Residence_type_Urban,0.013107704644360268,Increases,0.013215400992831744,Increases,0.013346540466461589,Increases,False,False
+smoking_status_Unknown,-0.0060074109886431555,Decreases,-0.006302381248515535,Decreases,-0.005969863323116887,Decreases,False,False
+smoking_status_formerly smoked,-0.002517382757489668,Decreases,-0.002934761757098827,Decreases,-0.0030996070043533175,Decreases,False,False
+smoking_status_never smoked,-0.0061761619967745885,Decreases,-0.005393236975035626,Decreases,-0.005362155263176943,Decreases,False,False
+smoking_status_smokes,0.0007910453874957927,Increases,0.0008299884300324405,Increases,0.0003868743759088751,Increases,False,False
+hypertension,-0.00890606264457523,Decreases,-0.008287677259445151,Decreases,-0.008416686790542282,Decreases,False,False
+heart_disease,0.010652945015755099,Increases,0.009996059155626376,Increases,0.01046714304035973,Increases,False,False
